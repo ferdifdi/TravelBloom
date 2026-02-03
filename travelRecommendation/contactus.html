@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./travel_recommendation.css">
-    <title>Travel Bloom</title>
+    <title>Contact Us - Travel Bloom</title>
 </head>
 <body>
     <div class="topnav">
         <a href="./travel_recommendation.html"> <i class="fa fa-plane"></i></a>        
-        <a class="active" href="./travel_recommendation.html">TravelBloom</a> 
+        <a href="./travel_recommendation.html">TravelBloom</a> 
         <a href="./travel_recommendation.html">Home</a> 
         <a href="./aboutus.html">About Us</a> 
-        <a href="./contactus.html">Contact Us</a> 
+        <a class="active" href="./contactus.html">Contact Us</a> 
         <div class="search-container">
             <form action="">
                 <div class="search-wrapper">
@@ -26,7 +26,8 @@
         </div>
     </div>
 
-    <section class="hero">
+    <!-- Contact Us Section -->
+    <section class="contact-hero">
         <div class="social-sidebar">
             <a href="https://x.com" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -34,14 +35,20 @@
             <a href="https://youtube.com" class="social-icon" target="_blank"><i class="fa fa-youtube-play"></i></a>
         </div>
         
-        <div class="hero-content">
-            <h1 class="hero-title">EXPLORE<br>DREAM<br>DESTINATION</h1>
-            <p class="hero-caption">It encourages exploration of unfamiliar
-                <br>territories, embracing diverse cultures and
-                <br>landscapes, while pursuing the desired
-                <br>destination that captivates the heart and
-                <br>ignites a sense of wonder.</p>
-            <button class="book-now-btn">BOOK NOW</button>
+        <div class="contact-content">
+            <div class="contact-left">
+                <h1 class="contact-title">CONTACT US</h1>
+                <p class="contact-subtitle">Get in touch</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Email" class="form-input" required>
+                    <textarea name="message" placeholder="Message" class="form-textarea" rows="8" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 </body>
