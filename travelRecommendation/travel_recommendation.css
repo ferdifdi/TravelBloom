@@ -186,4 +186,143 @@ body {
     color: #17a2b8;
     transform: scale(1.2);
 }
+
+.about-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('./Assets/LowerManhattanSkyline.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 80px 80px 100px;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.about-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+}
+
+.about-text p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text strong {
+    font-weight: bold;
+}
+
+.team-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.team-title {
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.1;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    min-width: 200px;
+}
+
+.team-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.team-card {
+    background: rgba(30, 50, 100, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px 25px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-icon {
+    width: 60px;
+    height: 60px;
+    background: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.team-icon i {
+    color: white;
+    font-size: 30px;
+}
+
+.team-card h3 {
+    color: white;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.team-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.team-role {
+    background: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.team-role:hover {
+    background: #2d4373;
+}
   
